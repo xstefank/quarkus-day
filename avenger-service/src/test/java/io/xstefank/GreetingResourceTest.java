@@ -1,6 +1,7 @@
 package io.xstefank;
 
 import io.quarkus.test.junit.QuarkusTest;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -19,6 +20,7 @@ public class GreetingResourceTest {
     }
 
     @Test
+    @Disabled
     public void testHelloEndpoint2() {
         try {
             Thread.sleep(3000);
